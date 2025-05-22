@@ -10,7 +10,7 @@
         <module name="vetores" />
         <module name="Mudancadetipo" />
         <module name="Lops" />
-        <module name="exempl2" />
+        <module name="tiposvaloresnumericos" />
       </profile>
     </annotationProcessing>
   </component>

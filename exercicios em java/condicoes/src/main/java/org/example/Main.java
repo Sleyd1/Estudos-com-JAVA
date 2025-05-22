@@ -20,6 +20,25 @@ public class Main{
             System.out.println("oi");
         }
 
+        if (mensage.isBlank()){
+            // isBlank verifica se a variavel mensage esta vazia
+            System.out.println("Você não tem nenhuma mensagem!!!");
+        } else {
+            System.out.println(mensage);
+        }
+
+
+        if (mensage.equals("Olá, mundo!")) {
+            // equals() toma um objeto como parâmetro e retorna um valor booleano indicando se os objetos são iguais ou não.
+            System.out.println("iguais");
+        } else {
+            System.out.println("não iguais");
+        }
+
+
+
+
+
     }
 
  }
