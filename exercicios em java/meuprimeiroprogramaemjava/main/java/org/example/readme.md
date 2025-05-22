@@ -60,7 +60,13 @@ Operadores
 
 * Outros: ``instanceof``, ``new``
 
+Modificadores e Métodos:
 
+* Classes usam modificadores (public, private) para controlar acesso a atributos e métodos.
+
+* Métodos dentro de classes implementam lógica (ex.: calcularTotal).
+
+* Exemplo: private Item[] itens; (atributo encapsulado) e public double calcularTotal() (método exposto).
 
 
 
