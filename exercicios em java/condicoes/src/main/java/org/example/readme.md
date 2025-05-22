@@ -1,5 +1,5 @@
 # Estruturas de Controle
-* Condicional:
+* **Condicional**:
 
  ```
 if (condicao) {
@@ -11,7 +11,7 @@ if (condicao) {
 }
 ```
 
-* Switch:
+* **Switch**:
 ```
 switch (variavel) {
     case valor1:
@@ -25,9 +25,9 @@ switch (variavel) {
 }
 ```
 
-* Laços:
+  * **Laços**:
 
- * for:
+* for:
  ```
 
  for (int i = 0; i < 5; i++) {
@@ -35,14 +35,14 @@ switch (variavel) {
  }
 ```
 
-* while:
+ * while:
 ```
 while (condicao) {
     // código
 }
 ```
 
-* do-while:
+ * do-while:
 ```
 do {
     // código
