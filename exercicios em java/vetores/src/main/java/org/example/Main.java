@@ -4,21 +4,25 @@ import java.util.ArrayList;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int[] valores = {1, 5, 9, 4, 8};
+        //Inicialização direta: Atribuir valores diretamente
+        int[] valores = {1, 5, 9, 4, 8}; // Array com 5 elementos
         /* os colhetes na frente do tipo indica q a
         varavel vai armazenar multiplo valores.
          */
 
         /* Tambem podemos definir variaveis arreys com o
-        tamanho ja definidas mas com nenhum valor armzenados.
+        tamanho ja definidas mas com nenhum valor armazenados.
          */
-        int[] expl = new int[5];
+        int[] expl = new int[5]; // // Array com 5 posições (índices 0 a 4)
+        //Tamanho fixo: Você pode criar um array com um tamanho definido usando "new".
         /*
         * É importante relsaltar que q esses tipos de vetores sao fixos
         * se todos os espaços estiverem armazenando valores nao podemos adicionar mais
         * um espaço com valor.
         * */
         System.out.println("Total de valores armazenados no vetor: " + expl.length);
+        //Propriedade length
+        //Retorna o tamanho do array.
         System.out.println(valores[2]);
 
         /*
