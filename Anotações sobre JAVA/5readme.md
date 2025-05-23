@@ -62,6 +62,16 @@ Você deve usar construtores em Java nas seguintes situações:
 
 * Objetos Simples: Para classes utilitárias com métodos static, construtores podem ser desnecessários.
 
+ Estrutura Básica de um Construtor
+Sintaxe:
+````
 
+[modificador] NomeDaClasse(tipo1 param1, tipo2 param2, ...) {
+    // Inicialização dos atributos
+    this.atributo1 = param1;
+    // Validações ou lógica
+}
+
+````
 
 
