@@ -73,5 +73,13 @@ Sintaxe:
 }
 
 ````
+* Modificador: Geralmente public para permitir instanciamento externo. Pode ser private em padrões como Singleton.
+
+* NomeDaClasse: Deve ser idêntico ao nome da classe.
+
+* Parâmetros: Opcional; usado para passar valores iniciais.
+
+* this: Diferencia atributos da classe de parâmetros com o mesmo nome.
+
 
 
