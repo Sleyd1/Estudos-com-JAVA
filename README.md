@@ -175,5 +175,47 @@ Desenvolvedores Java (pessoas que escrevem código)
 |VS Code| (com plugin)	Leve e moderna|
 
 
+## Sintaxe JAVA
+
+### Variáveis
+#### Tipos Primitivos:
+* byte, short, int, long (inteiros).
+
+* float, double (ponto flutuante).
+
+* char (caractere).
+
+* boolean (verdadeiro/falso).
+
+#### Tipos de Referência:
+* Classes, String, arrays, interfaces.
+
+* Exemplo: String nome = "API";
+
+* Métodos: Blocos de código reutilizáveis com tipoRetorno nome(params) {...}.
+
+* Modificadores: Controlam acesso (public, private) e comportamento (static, final).
+
+
+
+
+## Fluxo de Decisão
+
+* Preciso expor a funcionalidade? → Use public.
+
+* É uma lógica interna? → Use ``private``.
+
+* É compartilhado entre instâncias? → Use ``static``.
+
+* É uma constante ou não deve ser alterado? → Use ``final``.
+
+* A lógica é reutilizável ou complexa? → Crie um ``método``.
+
+* Preciso processar dados em sequência? → Combine com ``loops/arrays``
+
+
+
+
+
 
 
