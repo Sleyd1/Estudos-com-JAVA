@@ -3,7 +3,7 @@ O que são Pacotes?
 Pacotes são namespaces que organizam classes e interfaces em Java, evitando conflitos de nomes e facilitando a modularidade. Eles são como pastas que agrupam classes relacionadas, permitindo uma estrutura hierárquica.
 
 Exemplo:
-````
+````java
 
 package com.exemplo.backend.model; // Pacote
 public class User {
@@ -46,10 +46,10 @@ public class User {
 * Importar Pacotes:
   * Use import para acessar classes de outros pacotes.
 
-  * Exemplo: import java.util.List;.
+  * Exemplo: ``import java.util.List;``.
 
 * Estrutura de Diretórios:
-  * O pacote corresponde à estrutura de pastas (ex.: com/exemplo/backend/User.java).
+  * O pacote corresponde à estrutura de pastas (ex.: ``com/exemplo/backend/User.java``).
 
   * O compilador espera que a classe esteja na pasta correspondente ao pacote.
 
@@ -59,7 +59,7 @@ public class User {
   * Exemplo: Uma classe utilitária pode ser default para uso interno.
  
     Ex:
-````
+````java
     package com.exemplo.backend.service;
 
 import com.exemplo.backend.model.User; // Importa classe de outro pacote
