@@ -1,14 +1,14 @@
 # Estrutura Básica de um Programa
 Um programa Java é organizado em classes. Todo código deve estar dentro de uma classe. Abaixo está a estrutura mínima de um programa Java:
-java
-````
+
+```java
 public class NomeDaClasse {
     public static void main(String[] args) {
         // Código principal aqui
         System.out.println("Olá, Mundo!");
     }
 }
-````
+```
 
 ## Modificadores em Java
 
