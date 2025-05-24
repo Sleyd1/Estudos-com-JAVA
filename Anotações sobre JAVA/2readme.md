@@ -1,6 +1,6 @@
  # Estrutura Básica de um Programa
 Um programa Java é organizado em classes. Todo código deve estar dentro de uma classe. Abaixo está a estrutura mínima de um programa Java:
-````
+````java
 
 public class NomeDaClasse {
     public static void main(String[] args) {
@@ -12,13 +12,12 @@ public class NomeDaClasse {
 ````
 
 
-
 ## Classes em Java
 O que são Classes?
-Uma classe em Java é um modelo ou blueprint que define as propriedades (atributos) e comportamentos (métodos) de um objeto. Classes são a base da programação orientada a objetos (POO) em Java, permitindo encapsular dados e funcionalidades relacionadas. No contexto backend, classes são usadas para modelar entidades (ex.: User, Order), serviços, controladores, ou repositórios.
+Uma classe em Java é um modelo ou blueprint que define as propriedades (atributos) e comportamentos (métodos) de um objeto. Classes são a base da programação orientada a objetos (POO) em Java, permitindo encapsular dados e funcionalidades relacionadas. No contexto backend, classes são usadas para modelar entidades (ex.: ``User``, ``Order``), serviços, controladores, ou repositórios.
 
 Exemplo Simples:
-````
+````java
 public class User {
     // Atributos (propriedades)
     private Long id;
@@ -51,9 +50,9 @@ Java é uma linguagem orientada a objetos, e classes são fundamentais por causa
 * Polimorfismo: Classes permitem que objetos sejam tratados de forma genérica (ex.: uma lista de User pode conter Admin e Client).
 
 No desenvolvimento backend, classes são usadas para:
-* Modelar Entidades: Representar dados do banco (ex.: @Entity para JPA).
+* Modelar Entidades: Representar dados do banco (ex.: ``@Entity`` para JPA).
 
-* Controladores: Lidar com requisições HTTP (ex.: @RestController em Spring).
+* Controladores: Lidar com requisições HTTP (ex.: ``@RestController`` em Spring).
 
 * Serviços: Implementar lógica de negócios.
 
@@ -61,7 +60,7 @@ No desenvolvimento backend, classes são usadas para:
 
 Uma classe é um contêiner que agrupa:
 
-* Atributos: Dados (ex.: id, nome).
+* Atributos: Dados (ex.: ``id``, ``nome``).
 
 * Métodos: Funções que operam nesses dados ou executam tarefas.
 
@@ -74,12 +73,12 @@ Uma classe é um contêiner que agrupa:
 * Criar Objetos:
    * Use new para instanciar a classe.
 
-   * Exemplo: User user = new User(1L, "João");.
+   * Exemplo: ``User user = new User(1L, "João");``.
 
 * Acessar Atributos e Métodos:
    * Use `` . ``para acessar métodos ou atributos (se públicos).
 
-   * Exemplo: user.getNome().
+   * Exemplo: ``user.getNome()``.
 
 * Aplicar no Backend:
    * Use classes para modelar dados, serviços ou endpoints.
@@ -87,7 +86,7 @@ Uma classe é um contêiner que agrupa:
    * Integre com frameworks como Spring para funcionalidades avançadas.
 
 Estrutura Básica:
-````
+````java
 
 [modificador] class NomeClasse {
     // Atributos
@@ -108,9 +107,9 @@ Estrutura Básica:
 ````
 
 Quando Usar Classes?
-* Modelar Entidades: Para representar dados do domínio (ex.: User, Product).
+* Modelar Entidades: Para representar dados do domínio (ex.: ``User``, ``Product``).
 
-* Organizar Lógica: Para serviços ou controladores (ex.: UserService, OrderController).
+* Organizar Lógica: Para serviços ou controladores (ex.: ``UserService``, ``OrderController``).
 
 * Reutilização: Quando você precisa criar múltiplos objetos com o mesmo comportamento.
 
