@@ -11,7 +11,7 @@ Um construtor em Java é um método especial dentro de uma classe que é chamado
 * Pode ser sobrecarregado: Uma classe pode ter múltiplos construtores com diferentes assinaturas (lista de parâmetros).
 
 EX:
-````
+````java
 public class User {
     private Long id;
     private String nome;
@@ -26,7 +26,7 @@ public class User {
 
 
 Instanciação:
-````
+````java
 User user = new User(1L, "João"); // Chama o construtor
 ````
 
@@ -64,7 +64,8 @@ Você deve usar construtores em Java nas seguintes situações:
 
  ## Estrutura Básica de um Construtor
 Sintaxe:
-````
+
+````java
 
 [modificador] NomeDaClasse(tipo1 param1, tipo2 param2, ...) {
     // Inicialização dos atributos
@@ -73,6 +74,7 @@ Sintaxe:
 }
 
 ````
+
 * Modificador: Geralmente public para permitir instanciamento externo. Pode ser private em padrões como Singleton.
 
 * NomeDaClasse: Deve ser idêntico ao nome da classe.
