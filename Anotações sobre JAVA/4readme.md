@@ -13,7 +13,7 @@ Manutenibilidade: Facilita testes e alterações (ex.: métodos em serviços sep
 Abstração: Esconde detalhes de implementação (ex.: um método salvarUsuario não expõe como o banco é acessado).
 
 Estrutura Básica
-````
+````java
 
 [modificadorAcesso] [modificadorNãoAcesso] tipoRetorno nomeMetodo(tipo1 param1, tipo2 param2) {
     // Código
@@ -40,7 +40,7 @@ Estrutura Básica
 
 Exemplo:
 
-````
+````java
 @Service
 public class OrderService {
     private final OrderRepository repository;
