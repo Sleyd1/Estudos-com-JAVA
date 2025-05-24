@@ -66,8 +66,7 @@ Os modificadores em Java são divididos em duas categorias principais:
   * Em classes ou métodos que definem contratos, mas deixam a implementação para subclasses (ex.: serviços genéricos).
 
 Estrutura Básica:
-````
-java
+````java
 
 [modificadorAcesso] [modificadorNãoAcesso] tipo nome [ = valor]; // Variável
 [modificadorAcesso] [modificadorNãoAcesso] tipoRetorno nomeMetodo(parametros) {...} // Método
