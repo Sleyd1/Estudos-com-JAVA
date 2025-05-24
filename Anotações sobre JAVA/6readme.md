@@ -4,14 +4,14 @@
 Características principais:
 * Declaração: Definidos no escopo da classe, fora de métodos ou construtores.
 
-* Tipos: Podem ser primitivos (int, double, boolean) ou de referência (String, arrays, outras classes).
+* Tipos: Podem ser primitivos (``int``, ``double``, ``boolean``) ou de referência (``String``, arrays, outras ``classes``).
 
-* Modificadores: Podem ter modificadores como private, public, final, static, etc.
+* Modificadores: Podem ter modificadores como ``private``, ``public``, ``final``, ``static``, etc.
 
 * Acesso: Normalmente acessados via métodos getters e setters para manter encapsulamento.
 
 Exemplo Simples:
-````
+````java
 public class User {
     // Atributos
     private Long id;
@@ -36,7 +36,7 @@ public class User {
 ````
 
 Instanciação:
-````
+````java
 
 User user = new User(1L, "João");
 System.out.println(user.getNome()); // Saída: João
@@ -55,7 +55,7 @@ Atributos são essenciais na programação orientada a objetos e no desenvolvime
    * Exemplo: Um atributo senha só pode ser alterado por um método setSenha com validação.
 
 * Modelagem do Domínio:
-   * Atributos definem as propriedades de entidades do negócio (ex.: Order com id, itens, total).
+   * Atributos definem as propriedades de entidades do negócio (ex.: ``Order`` com ``id``, ``itens``, total).
 
    * Em frameworks como Spring com JPA, atributos mapeiam diretamente para colunas de banco de dados.
 
@@ -69,17 +69,17 @@ Atributos são essenciais na programação orientada a objetos e no desenvolvime
 
 ## Estrutura Básica de Atributos
 Sintaxe:
-````
+````java
 
 [modificador] tipo nomeAtributo [ = valorInicial];
 ````
-* Modificador: Controla acesso ou comportamento (ex.: private, public, final, static).
+* Modificador: Controla acesso ou comportamento (ex.: ``private``, ``public``, ``final``, ``static``).
 
-* Tipo: Primitivo (int, double) ou de referência (String, List, classe personalizada).
+* Tipo: Primitivo (``int``, ``double``) ou de referência (``String``, ``List``, classe personalizada).
 
 * Nome: Nome descritivo em camelCase (ex.: nomeUsuario, saldoConta).
 
-* Valor Inicial: Opcional; se não especificado, usa valores padrão (ex.: 0 para int, null para objetos).
+* Valor Inicial: Opcional; se não especificado, usa valores padrão (ex.: 0 para ``int``, ``null`` para objetos).
 
 
 
