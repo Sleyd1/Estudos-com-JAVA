@@ -36,7 +36,12 @@ public class Main{
         }
 
 
+        // operador ternario
+        // condição ? valor_se_verdadeiro : valor_se_falso;
+        int idade = 17;
+        String status = (idade >= 18) ? "Maior de idade" : "Menor de idade";
 
+        System.out.println(status);
 
 
     }

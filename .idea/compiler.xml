@@ -10,6 +10,7 @@
         <module name="vetores" />
         <module name="Mudancadetipo" />
         <module name="Lops" />
+        <module name="trabalhando" />
         <module name="tiposvaloresnumericos" />
       </profile>
     </annotationProcessing>
