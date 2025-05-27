@@ -7,11 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="condicoes" />
-        <module name="vetores" />
-        <module name="Mudancadetipo" />
         <module name="Lops" />
         <module name="trabalhando" />
         <module name="tiposvaloresnumericos" />
+        <module name="vetores" />
+        <module name="Mudancadetipo" />
+        <module name="obje" />
       </profile>
     </annotationProcessing>
   </component>

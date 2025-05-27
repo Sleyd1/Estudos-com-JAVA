@@ -34,14 +34,14 @@ public class Main {
         while(contador <= 10) {
             contador++;
 
-            if (contador <= 10)
+            if (contador <= 10) {
                 System.out.println("contador menor q 10");
-            else {
+            }else {
                 System.out.println("contador igual a 10");
             }
 
         }
 
 
-        }
     }
+}
