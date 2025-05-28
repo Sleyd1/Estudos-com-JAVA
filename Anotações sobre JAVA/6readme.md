@@ -1,5 +1,5 @@
 # Atributos (Propriedades)
-**Atributos**, também chamados de **propriedades** ou **campos** em Java, são variáveis definidas dentro de uma classe que representam o **estado** ou as **características** de um objeto dessa classe. Eles armazenam os dados associados a um objeto e são a base para modelar entidades no paradigma da programação orientada a objetos (POO). Em Java, atributos são geralmente declarados com modificadores de acesso (ex.: private) para garantir encapsulamento.
+**Atributos**, também chamados de **propriedades** ou **campos** em Java, são variáveis definidas dentro de uma classe que representam o **estado** ou as **características** de um org.example.trabalhandcomobj1.objetoex.objeto dessa classe. Eles armazenam os dados associados a um org.example.trabalhandcomobj1.objetoex.objeto e são a base para modelar entidades no paradigma da programação orientada a objetos (POO). Em Java, atributos são geralmente declarados com modificadores de acesso (ex.: private) para garantir encapsulamento.
 
 Características principais:
 * Declaração: Definidos no escopo da classe, fora de métodos ou construtores.
@@ -45,7 +45,7 @@ System.out.println(user.getNome()); // Saída: João
 ## Para que Servem Atributos?
 Atributos são essenciais na programação orientada a objetos e no desenvolvimento backend pelos seguintes motivos:
 * Representar o Estado de um Objeto:
-   * Atributos armazenam as características de um objeto, como id, nome ou saldo de um User.
+   * Atributos armazenam as características de um org.example.trabalhandcomobj1.objetoex.objeto, como id, nome ou saldo de um User.
 
    * No backend, representam dados de entidades persistidas no banco (ex.: colunas de uma tabela).
 

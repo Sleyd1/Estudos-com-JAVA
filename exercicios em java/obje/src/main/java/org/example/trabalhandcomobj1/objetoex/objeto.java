@@ -1,4 +1,6 @@
-import org.example.objetoex.Carro;
+package org.example.trabalhandcomobj1.objetoex;
+
+import org.example.trabalhandcomobj1.objetoex.objetoex.Carro;
 
 public class objeto {
     public static void main (String[] args){
