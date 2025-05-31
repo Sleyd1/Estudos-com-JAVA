@@ -8,7 +8,7 @@ public class Modfc {
         LimiteDeV carro2 = new LimiteDeV("kaisa",200);
         LimiteDeV carro3 = new LimiteDeV("kaisa",200);
 
-        LimiteDeV.velocidadeLimite = 2000;
+        LimiteDeV.setVelocidadeLimite(300);
 
         carro1.getImprime();
         carro2.getImprime();

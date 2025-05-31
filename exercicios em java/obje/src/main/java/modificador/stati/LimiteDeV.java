@@ -20,9 +20,14 @@ public class LimiteDeV {
 
     }
 
-    public void VelocidadeLimite(double velocidadeLimite){
-        this.velocidadeLimite = velocidadeLimite;
+    public static void setVelocidadeLimite(double velocidadeLimite){
+        LimiteDeV.velocidadeLimite = velocidadeLimite;
     }
+
+    public static double getVelocidadeLimite(){
+        return velocidadeLimite;
+    }
+
 
     public String getNome(){
         return nome;
