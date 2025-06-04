@@ -30,7 +30,7 @@ Blocos de inicialização em Java são trechos de código que são executados au
 
  Sintaxe:
 
-````
+````java
  class MinhaClasse {
     // Bloco de inicialização estático
     static {
