@@ -40,29 +40,29 @@ Os modificadores em Java são divididos em duas categorias principais:
    * ``volatile``: Garante visibilidade de alterações em variáveis em ambientes multithread.
 
 ##  Quando Usar Modificadores?
-* Use public:
+* Use ``public``:
    * Para métodos ou classes acessíveis por outros pacotes, como controladores REST (@RestController).
 
    * Exemplo: Métodos expostos em uma API.
 
-* Use private:
+* Use ``private``:
    * Para atributos ou métodos internos de uma classe (ex.: cálculos internos de um serviço).
 
    * Exemplo: Atributos de uma entidade como id ou senha.
 
-* Use protected:
+* Use ``protected``:
    * Quando subclasses precisam acessar métodos ou atributos (ex.: em herança).
 
-* Use default:
+* Use ``default``:
    * Para classes ou métodos que devem ser acessíveis apenas no mesmo pacote (ex.: classes utilitárias internas).
 
-* Use static:
+* Use ``static``:
    * Para métodos ou variáveis compartilhados por todas as instâncias (ex.: contadores globais, métodos utilitários).
 
-* Use final:
+* Use ``final``:
    * Para constantes ou para impedir sobrescrita/herança (ex.: configurações fixas).
 
-* Use abstract:
+* Use ``abstract``:
   * Em classes ou métodos que definem contratos, mas deixam a implementação para subclasses (ex.: serviços genéricos).
 
 Estrutura Básica:
