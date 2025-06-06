@@ -49,7 +49,8 @@ do {
 } while (condicao);
 ```
 
-* **Operador ternario
+* **Operador ternario**
+  
 Os operadores ternários são uma forma concisa de escrever condicionais em uma única linha, substituindo estruturas if-else tradicionais. Em geral, eles seguem a sintaxe: ``valor_se_verdadeiro if condição else valor_se_falso.``
 ex:
 
