@@ -77,7 +77,7 @@ Armazena metadados das classes, como:
 
 Em resumo:
 Item |	Explicação |
------|-----|-----|
+-----|-----|
 Memória usada pelo Java|	Vem da RAM do computador|
 Gerenciada pela|	JVM (Java Virtual Machine)|
 Controlável?|	Sim, com parâmetros como -Xms e -Xmx|
