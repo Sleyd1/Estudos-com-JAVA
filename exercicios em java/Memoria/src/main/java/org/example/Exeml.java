@@ -1,7 +1,7 @@
 package org.example;
-import java.util.*;
+
 //Como saber quanto espaço em memória um programa Java está usando?
-public class exeml {
+public class Exeml {
     public static void main(String[] args) {
         Runtime runtime = Runtime.getRuntime();
 
