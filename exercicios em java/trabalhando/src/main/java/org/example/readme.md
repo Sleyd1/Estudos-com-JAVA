@@ -1,4 +1,4 @@
-# espaço em memória 
+# Espaço em memória 
 O espaço em memória que o Java usa é o espaço da memória RAM do computador, mas com alguns detalhes importantes:
 
 🔹 Como funciona
