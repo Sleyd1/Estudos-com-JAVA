@@ -39,3 +39,17 @@ public class Calculadora {
 }
 
 ````
+
+Erro comum:
+`````java
+public int somar(int a, int b) {
+    return a + b;
+}
+
+public double somar(int a, int b) {
+    return a + b; // ❌ ERRO! Só mudou o tipo de retorno
+}
+````
+
+
+
