@@ -75,6 +75,16 @@ Armazena metadados das classes, como:
 
 * Desde o Java 8, o PermGen foi substituído por Metaspace, que usa a RAM de forma mais flexível
 
+| Área         | Conteúdo Principal          | Vida útil        | Gerenciado por      |
+| ------------ | --------------------------- | ---------------- | ------------------- |
+| Heap         | Objetos                     | Até o GC limpar  | Garbage Collector   |
+| Stack        | Variáveis locais, chamadas  | Método atual     | JVM automaticamente |
+| Metaspace    | Classes e metadados         | Durante execução | JVM                 |
+| PC Register  | Próxima instrução da thread | Enquanto ativo   | JVM                 |
+| Native Stack | Chamadas a código nativo    | Método nativo    | JVM                 |
+
+
+
 Em resumo:
 Item |	Explicação |
 -----|-----|
