@@ -1,10 +1,10 @@
 # ORDEM DE EXECUÇÃO EM JAVA
 
 Existem basicamente dois níveis de execução:
-🔸 1. Estático (``static``)
+### 🔸 1. Estático (``static``)
 → Executado apenas uma vez, quando a classe é carregada na memória.
 
-🔸 2. De instância
+### 🔸 2. De instância
 → Executado toda vez que um objeto é criado com ``new``.
 
 ## ORDEM DE EXECUÇÃO
