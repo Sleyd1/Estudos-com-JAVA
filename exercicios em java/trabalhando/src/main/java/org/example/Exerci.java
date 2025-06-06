@@ -7,5 +7,8 @@ public class Exerci {
         double salario = 7500.504;
         String data = "15/04";
         System.out.println("Eu " + nome + ", morando no endereço " + endereco + ", confirmo que recebi o salário de " + salario + ", na data " + data);
+
+
+
     }
 }

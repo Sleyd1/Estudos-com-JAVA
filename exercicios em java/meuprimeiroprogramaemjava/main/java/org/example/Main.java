@@ -1,11 +1,11 @@
-//package org.example;
+package meuprimeiroprogramaemjava.main.java.org.example;//package org.example;
 
 import org.w3c.dom.ls.LSOutput;
 
 public class Main {
-    public static class Main {
+    public static class main {
         int meuNumero = 20;
-        var meuNome = "wesley";
+        // Var meuNome = "wesley";
         /*Existem duas formas de declarar uma variavel em java
         uma delas é informar o tipo e depois nomea-la
         Ex:
