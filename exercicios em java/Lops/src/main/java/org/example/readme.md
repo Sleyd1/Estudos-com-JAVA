@@ -1,7 +1,7 @@
 ## Loop for (Tradicional)
 O loop for é usado quando você sabe o número exato de iterações ou precisa controlar um contador (como índices de um array). É muito comum para iterar sobre arrays ou realizar repetições baseadas em índices.
 Sintaxe
-````
+````java
 
 for (inicialização; condição; atualização) {
     // Bloco de código a ser executado
@@ -14,7 +14,7 @@ for (inicialização; condição; atualização) {
 
 * Atualização: Executada após cada iteração (ex.: incrementar o contador).
 
-````
+````java
 
 public class ExemploFor {
     public static void main(String[] args) {
@@ -36,7 +36,7 @@ Nota ajustada: 7
 ## Loop for-each (Enhanced For)
 O for-each (ou "enhanced for") é uma versão simplificada do for, projetada para iterar sobre arrays ou coleções (como ArrayList) sem precisar de um contador explícito. É mais legível, mas menos flexível para manipulações baseadas em índices.
 Sintaxe
-````
+````java
 for (tipo elemento : arrayOuColecao) {
     // Bloco de código
 }
@@ -47,7 +47,7 @@ for (tipo elemento : arrayOuColecao) {
 
 * arrayOuColecao: O array ou coleção a ser percorrida.
 
-````
+````java
 public class ExemploForEach {
     public static void main(String[] args) {
         String[] nomes = {"Ana", "Bruno", "Clara"};
@@ -89,14 +89,14 @@ Nome: Clara
  ## Loop while
 O while executa um bloco de código enquanto uma condição for verdadeira. É útil quando o número de iterações não é conhecido antecipadamente.
 Sintaxe
-````
+````java
 
 while (condição) {
     // Bloco de código
 }
 ````
 Exemplo com Array
-````
+````java
 
 public class ExemploWhile {
     public static void main(String[] args) {
@@ -134,8 +134,8 @@ Iterar sobre arrays quando o controle de índices é necessário, mas a condiç�
 
 ### Armadilhas
 * Loop infinito: Se a condição nunca se tornar falsa (ex.: esquecer i++), o programa trava.
-java
-````
+
+````java
 while (true) { // Loop infinito
     System.out.println("Isso não para!");
 }
@@ -143,7 +143,7 @@ while (true) { // Loop infinito
 * Sempre garanta que a condição será eventualmente falsa.
 
 Exemplo Prático (Procurar Elemento)
-````
+````java
 
 int[] numeros = {4, 7, 2, 9, 1};
 int alvo = 2;
@@ -164,14 +164,14 @@ Saída: ``Alvo 2 encontrado no índice 2``
 ## Loop do-while
 O do-while é semelhante ao while, mas garante que o bloco de código seja executado pelo menos uma vez, pois a condição é verificada após a execução.
 Sintaxe
-````
+````java
 
 do {
     // Bloco de código
 } while (condição);
 ````
 Exemplo com Array
-````
+````java
 public class ExemploDoWhile {
     public static void main(String[] args) {
         int[] numeros = {10, 20, 30};
@@ -209,7 +209,7 @@ Os loops podem ser controlados com palavras-chave para alterar o fluxo:
 Interrompe o loop imediatamente, saindo dele.
 
 Exemplo:
-````
+````java
 int[] numeros = {1, 2, 3, 4, 5};
 for (int num : numeros) {
     if (num == 3) {
@@ -223,7 +223,7 @@ for (int num : numeros) {
 **b)** ``continue``
 Pula para a próxima iteração, ignorando o restante do bloco atual.
 Exemplo:
-````
+````java
 int[] numeros = {1, 2, 3, 4, 5};
 for (int num : numeros) {
     if (num % 2 == 0) {
@@ -237,7 +237,7 @@ for (int num : numeros) {
 **c)** ``Labels`` (Rotulados)
 Permitem direcionar break ou continue para um loop externo em loops aninhados.
 Exemplo:
-````
+````java
 
 int[][] matriz = {{1, 2}, {3, 4}, {5, 6}};
 externo: for (int i = 0; i < matriz.length; i++) {
@@ -271,14 +271,14 @@ Use o loop certo para a tarefa:
 
 ### Armadilhas Comuns
 Índice fora do limite:
-````
+````java
 int[] array = {1, 2, 3};
 for (int i = 0; i <= array.length; i++) { // Erro: <= em vez de <
     System.out.println(array[i]); // Lança ArrayIndexOutOfBoundsException
 }
 ````
 Esquecer de atualizar o contador:
-````
+````java
 
 int i = 0;
 while (i < 5) {
