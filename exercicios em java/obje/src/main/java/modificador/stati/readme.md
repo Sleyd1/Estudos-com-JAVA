@@ -48,3 +48,19 @@ Eles não dependem de atributos do objeto (por exemplo: métodos utilitários ou
 Você quer criar funções de ajuda (helper methods).
 
 Eles executam lógica comum e não precisam de estado interno.
+
+
+## Variáveis static (variáveis de classe)
+sintaxe:
+````java
+public class Exemplo {
+    static int contador = 0;
+
+    public Exemplo() {
+        contador++;
+    }
+}
+````
+* ``contador`` é compartilhado entre todas as instâncias da classe Exemplo.
+
+* Se você criar 5 objetos, o valor de contador será incrementado para 5, porque todas as instâncias compartilham essa variável.
