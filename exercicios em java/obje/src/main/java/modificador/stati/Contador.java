@@ -3,10 +3,12 @@ package modificador.stati;
 public class Contador {
     public static int[] contar;
     public int[] contando;
-    //
-     //
-     //
-     //
+     // 0_ Bloco de inicialização é executado quando a jvm carregar a classe.
+     // 1_ alocado espaço em memória para o projeto.
+     // 2_ cada atributo de classe e inicializados com alores default ou os valores que for passada.
+     // 3_ bloco de inicialização e executado.
+     // 4_ o contrutor e executado.
+
 
 
 

@@ -4,10 +4,10 @@ package trabalhandocomobj2.blocodeinicializacao;
 
 public class ExemploBloco {
     private int[] contador;
-    // 1_ aloca espaço em memoria pro objeto
+    // 1_ aloca espaço em memória para o objeto.
     // 2_ cada atributo de classe e inicializados com alores default ou os valores que for passada.
-    // 3_ bloco de inicialização e executado
-    // 4_ o contrutor e executado
+    // 3_ bloco de inicialização e executado.
+    // 4_ o contrutor e executado.
 
     // bloco de inicalição
     {

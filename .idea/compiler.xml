@@ -8,11 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="condicoes" />
         <module name="Lops" />
-        <module name="trabalhando" />
         <module name="tiposvaloresnumericos" />
         <module name="vetores" />
         <module name="Mudancadetipo" />
         <module name="obje" />
+        <module name="Memoria" />
       </profile>
     </annotationProcessing>
   </component>
