@@ -13,6 +13,38 @@ public class MinhaClasse {
     }
 }
 ````
+### Regras dos métodos static
+* Não pode acessar membros de instância (não estáticos) diretamente.
 
+* Você não pode usar this dentro de um método static.
 
+* Pode acessar outros membros static da classe.
 
+* Pode ser chamado diretamente pela classe (sem new).
+
+#### Exemplo prático
+````java
+public class Matematica {
+
+    public static int quadrado(int x) {
+        return x * x;
+    }
+
+    public static double pi = 3.1415;
+}
+````
+
+uso:
+````java
+int resultado = Matematica.quadrado(5); // 25
+double valorDePi = Matematica.pi;       // 3.1415
+````
+
+### Quando usar métodos estáticos?
+Use métodos static quando:
+
+Eles não dependem de atributos do objeto (por exemplo: métodos utilitários ou matemáticos).
+
+Você quer criar funções de ajuda (helper methods).
+
+Eles executam lógica comum e não precisam de estado interno.
