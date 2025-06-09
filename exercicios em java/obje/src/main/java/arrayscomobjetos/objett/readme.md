@@ -1,5 +1,5 @@
 # Associação entre classes (Conceito de POO)
-Na Programação Orientada a Objetos (POO), associação é o relacionamento entre duas classes. Por exemplo, uma Pessoa pode ter um Endereço.
+Na Programação Orientada a Objetos (POO), associação é o relacionamento entre duas classes. Por exemplo, uma ``Pessoa`` pode ter um ``Endereço``.
 ````java
 class Endereco {
     String rua;
@@ -12,18 +12,18 @@ class Pessoa {
 }
 ````
 
-Nesse caso, Pessoa tem um Endereco, mas as duas classes são independentes.
+Nesse caso, ``Pessoa`` tem um ``Endereco``, mas as duas classes são independentes.
 
 # Tipos de Associação
 
 Tipos de Associação
 Existem 3 tipos principais de associação:
 
-Associação Simples: Uma classe usa outra.
+* **Associação Simples**: Uma classe usa outra.
 
-Agregação (tem-um): Uma classe contém outra, mas elas podem existir separadamente.
+* **Agregação** (tem-um): Uma classe contém outra, mas elas podem existir separadamente.
 
-Composição (parte-de): Uma classe contém outra, e a existência de uma depende da outra.
+* **Composição** (parte-de): Uma classe contém outra, e a existência de uma depende da outra.
 
 🔸 Exemplo de Agregação:
 
@@ -36,7 +36,7 @@ class Universidade {
     Departamento departamento; // Agregação
 }
 ````
-
+🔸 Exemplo de Composição:
 ````java
 class Motor {
     // só existe dentro de Carro
@@ -62,7 +62,7 @@ class Turma {
 
 Associação unidirecional significa que uma classe conhece a outra, mas não o contrário.
 
-Por exemplo, se a classe ``Pessoa`` conhece a classe Endereco, mas Endereco não conhece Pessoa, temos uma associação unidirecional.
+Por exemplo, se a classe ``Pessoa`` conhece a classe ``Endereco``, mas ``Endereco`` não conhece Pessoa, temos uma associação unidirecional.
 
 Exemplo pratico:
 
@@ -95,9 +95,9 @@ class Pessoa {
 ````
 
 O que acontece aqui:
-* Pessoa tem um Endereco.
+* ``Pessoa`` tem um ``Endereco``.
 
-* Endereco não sabe nada sobre Pessoa.
+* ``Endereco`` não sabe nada sobre ``Pessoa``.
 
 
 
