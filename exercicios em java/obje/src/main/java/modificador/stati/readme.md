@@ -64,3 +64,54 @@ public class Exemplo {
 * ``contador`` é compartilhado entre todas as instâncias da classe Exemplo.
 
 * Se você criar 5 objetos, o valor de contador será incrementado para 5, porque todas as instâncias compartilham essa variável.
+
+
+## Bloco de Inicialização Estático
+
+Um bloco de inicialização estático é um bloco de código que é executado apenas uma vez, quando a classe é carregada pela primeira vez (ou seja, antes de qualquer instância ser criada ou membro static ser acessado).
+
+sintaxe:
+````java
+public class Exemplo {
+
+    static {
+        // Este código é executado uma única vez, quando a classe é carregada
+        System.out.println("Bloco estático executado");
+    }
+
+    public Exemplo() {
+        System.out.println("Construtor chamado");
+    }
+}
+````
+
+Ex:
+````java
+public class Teste {
+    static int valor;
+
+    static {
+        // Bloco de inicialização estático
+        valor = 10;
+        System.out.println("Bloco estático executado");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Valor: " + valor);
+        Teste t1 = new Teste();  // construtor não faz nada aqui
+        Teste t2 = new Teste();  // bloco estático NÃO é executado de novo
+    }
+}
+````
+
+
+### Características
+Só roda uma vez, quando a classe é carregada pela primeira vez na JVM.
+
+Ideal para inicializações complexas de variáveis static, como carregar arquivos, configurações, conexões, etc.
+
+Executado antes de qualquer construtor ou método da classe.
+
+Pode haver mais de um bloco static — eles são executados na ordem em que aparecem.
+
+
