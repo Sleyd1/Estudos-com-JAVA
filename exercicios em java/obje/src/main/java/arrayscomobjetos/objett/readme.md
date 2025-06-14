@@ -99,10 +99,78 @@ O que acontece aqui:
 
 * ``Endereco`` não sabe nada sobre ``Pessoa``.
 
+## Associação Bidirecional
+Na associação bidirecional, as duas classes sabem uma da existência da outra. Ou seja, cada instância mantém uma referência à outra.
 
+Exemplo clássico:
 
+* Um Aluno sabe quem é seu Professor;
 
+* Um Professor sabe quais são seus Alunos.
 
+  ````java
+  import java.util.ArrayList;
+  import java.util.List;
+
+  class Aluno {
+    private String nome;
+    private Professor professor;
+
+    public Aluno(String nome) {
+        this.nome = nome;
+    }
+
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
+    }
+
+    public Professor getProfessor() {
+        return professor;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+  }
+
+    class Professor {
+    private String nome;
+    private List<Aluno> alunos = new ArrayList<>();
+
+    public Professor(String nome) {
+        this.nome = nome;
+    }
+
+    public void adicionarAluno(Aluno aluno) {
+        alunos.add(aluno);
+        aluno.setProfessor(this); // relação bidirecional
+    }
+
+    public List<Aluno> getAlunos() {
+        return alunos;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+    }
+    
+    ````
+
+Explicando:
+* A classe Aluno possui um atributo do tipo Professor;
+
+* A classe Professor possui uma lista de Alunos;
+
+* Quando um aluno é adicionado ao professor, o professor é também definido no aluno — isso garante a bidirecionalidade da relação.
+
+Exemplos típicos de associação bidireciona:
+
+* Cliente e Conta Bancária
+
+* Pedido e Produto
+
+* Médico e Paciente
 
 
 
