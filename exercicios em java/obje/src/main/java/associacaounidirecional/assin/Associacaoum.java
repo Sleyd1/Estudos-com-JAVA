@@ -1,4 +1,4 @@
-package associacaounidirecional.ass;
+package associacaounidirecional.assin;
 
 
 

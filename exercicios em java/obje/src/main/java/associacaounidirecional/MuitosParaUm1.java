@@ -1,7 +1,7 @@
 package associacaounidirecional;
 
-import associacaounidirecional.ass.AssociacaoUnidirecional;
-import associacaounidirecional.ass.Associacaoum;
+import associacaounidirecional.assin.AssociacaoUnidirecional;
+import associacaounidirecional.assin.Associacaoum;
 
 //Associação unidirecional muitos para um
 public class MuitosParaUm1 {
