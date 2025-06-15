@@ -7,16 +7,6 @@ public class AssociacaoUnidirecional {
     private Associacaoum[] professor;
 
 
-    public void imprimir() {
-        System.out.println(this.nome);
-        if (professor == null) {
-            return;
-        }
-        for (Associacaoum prof : professor){
-            System.out.println(prof.getProfessor());
-        }
-    }
-
     public AssociacaoUnidirecional(String nome){
         this.nome = nome;
     }
@@ -38,7 +28,15 @@ public class AssociacaoUnidirecional {
             return professor;
     }
 
-
+    public void imprimir() {
+        System.out.println(this.nome);
+        if (professor == null) {
+            return;
+        }
+        for (Associacaoum prof : professor){
+            System.out.println(prof.getProfessor());
+        }
+    }
 
 
 

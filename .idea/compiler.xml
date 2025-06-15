@@ -11,6 +11,7 @@
         <module name="tiposvaloresnumericos" />
         <module name="vetores" />
         <module name="Mudancadetipo" />
+        <module name="objet2" />
         <module name="obje" />
         <module name="Memoria" />
       </profile>
