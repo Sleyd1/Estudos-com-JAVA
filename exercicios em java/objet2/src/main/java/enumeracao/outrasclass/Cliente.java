@@ -17,9 +17,9 @@ public class Cliente {
 
     private String comparar(){
         if (tipo == TipoCliente.CLIENTE_JURIDICO){
-            return "Cliente juridico " + tipo;
+            return "Cliente juridico " + tipo + " valor "+ tipo.getValor();
         } else if (tipo == TipoCliente.CLIENTE_FISICA) {
-            return "Cliente fisico " + tipo;
+            return "Cliente fisico " + tipo + " valor "+ tipo.getValor();
         } else {
             return null;
         }
