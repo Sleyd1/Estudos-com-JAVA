@@ -15,5 +15,10 @@ public class Testenum {
 
         System.out.println(TipoDePagamento.DEBITO.desconto(20));
         System.out.println(TipoDePagamento.CREDITO.desconto(30));
+
+
+        System.out.println("--------------");
+        TipoCliente tipoDClient = TipoCliente.encontrarCliente("Juridica");
+        System.out.println(tipoDClient);
     }
 }
