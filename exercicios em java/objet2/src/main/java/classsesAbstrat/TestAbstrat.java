@@ -7,5 +7,9 @@ public class TestAbstrat {
         Desenvolvedor funcionario = new Desenvolvedor("Wesley",20000,"analise de Sistemas");
 
         funcionario.exibir();
+        funcionario.imprimir();
+        /*
+        * Desenvolvedor subclasse da classe Funcionario erdou o metodo imprimir
+        * */
     }
 }
