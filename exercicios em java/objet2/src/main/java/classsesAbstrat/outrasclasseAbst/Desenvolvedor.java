@@ -11,6 +11,11 @@ public class Desenvolvedor extends Funcionario {
         return atividade;
     }
 
+    @Override
+    public double main() {
+        return this.getSalario() * 0.12;
+    }
+
     public void exibir(){
         System.out.println(getNome());
         System.out.println(getSalario());
