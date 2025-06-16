@@ -1,6 +1,6 @@
 package Interfaces.outrasclasin;
 
-public class ClasseEX implements Implentacoes, diminuir{
+public class ClasseEX implements Implentacoes, Diminuir {
     /*
     * podemos adicionar multiplas interfaces
     * */
