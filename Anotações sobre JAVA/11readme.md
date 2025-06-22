@@ -140,6 +140,14 @@ class Barco extends Veiculo {
 
 
 
+## ✅ Boas Práticas
+Use abstração para evitar código duplicado.
+
+Não coloque lógica concreta demais na classe abstrata (isso pode limitar a flexibilidade).
+
+Nomeie a classe de forma genérica: Animal, Veiculo, Componente, Conta, etc.
+
+Combine com interfaces quando for necessário múltipla herança de comportamento.
 
 
 
