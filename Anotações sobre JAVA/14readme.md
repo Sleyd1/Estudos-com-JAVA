@@ -178,7 +178,137 @@ public class MinhaExcecao extends Exception {
     }
 }
 ```
+## 📘 Guia Prático: Quando Usar **Lançamento de Exceções**, **`throws`**, **`try-catch`** e **Regras de Negócio**
 
+---
+
+### 🔹 1. **Quando usar `throw` (lançar exceção manualmente)?**
+
+> Use quando **você quiser interromper o fluxo normal do programa** por causa de uma **situação inválida ou inesperada**.
+
+#### ✅ Exemplos comuns:
+
+* Argumento inválido passado a um método.
+* Valor nulo que não deveria estar nulo.
+* Operações matemáticas inválidas (ex: divisão por zero).
+* Regras de negócio violadas.
+
+#### 🧠 Exemplo:
+
+```java
+public void sacar(double valor) {
+    if (valor <= 0) {
+        throw new IllegalArgumentException("Valor inválido para saque.");
+    }
+}
+```
+
+---
+
+### 🔹 2. **Quando usar `throws` (propagar exceção)?**
+
+> Use quando seu método **pode lançar uma Checked Exception** e **você quer deixar a responsabilidade de tratar para quem chamar** esse método.
+
+#### ✅ Quando usar:
+
+* Leitura/escrita em arquivos (`IOException`)
+* Acesso ao banco de dados (`SQLException`)
+* Threads, rede, reflexão, etc.
+
+#### 🧠 Exemplo:
+
+```java
+public void lerArquivo(String caminho) throws IOException {
+    Files.readAllLines(Paths.get(caminho));
+}
+```
+
+---
+
+### 🔹 3. **Quando usar `try-catch`?**
+
+> Use quando você **quer tratar** a exceção **ali mesmo**, e **continuar ou finalizar o programa de forma segura**.
+
+#### ✅ Quando usar:
+
+* Ao chamar métodos que lançam Checked Exceptions e **você quer tratar na hora**.
+* Quando você quiser registrar/logar o erro.
+* Quando você quer mostrar uma mensagem amigável ao usuário.
+* Quando você quiser tentar outra abordagem (ex: tentar com outro arquivo).
+
+#### 🧠 Exemplo:
+
+```java
+try {
+    BufferedReader br = new BufferedReader(new FileReader("dados.txt"));
+} catch (FileNotFoundException e) {
+    System.out.println("Arquivo não encontrado. Verifique o caminho.");
+}
+```
+
+---
+
+### 🔹 4. **Quando criar sua própria exceção (`throw new MinhaExcecao`) ?**
+
+> Quando uma **regra de negócio for violada** ou você quiser **deixar o código mais claro e específico**.
+
+#### ✅ Exemplo típico:
+
+```java
+public class SaldoInsuficienteException extends RuntimeException {
+    public SaldoInsuficienteException(String msg) {
+        super(msg);
+    }
+}
+```
+
+```java
+public void sacar(double valor) {
+    if (valor > saldo) {
+        throw new SaldoInsuficienteException("Saldo insuficiente.");
+    }
+}
+```
+
+---
+
+### 🧠 Resumo de Abordagens
+
+| Situação                          | Técnica               | Explicação rápida                             |
+| --------------------------------- | --------------------- | --------------------------------------------- |
+| Erro interno ou violação de regra | `throw`               | Lança a exceção manual                        |
+| Delegar tratamento                | `throws`              | Avisa quem chamar que esse método pode falhar |
+| Tratar na hora                    | `try-catch`           | Resolve o erro localmente, evita crash        |
+| Criar regra de negócio clara      | Exceção personalizada | Define erros específicos da lógica do sistema |
+
+---
+
+## ✅ Exemplo Final Integrado
+
+```java
+public void transferir(Conta destino, double valor) {
+    if (valor <= 0) {
+        throw new IllegalArgumentException("Valor inválido.");
+    }
+
+    if (this.saldo < valor) {
+        throw new SaldoInsuficienteException("Saldo insuficiente para transferência.");
+    }
+
+    this.saldo -= valor;
+    destino.depositar(valor);
+}
+```
+
+E quem usa esse método pode decidir tratar:
+
+```java
+try {
+    conta1.transferir(conta2, 100);
+} catch (SaldoInsuficienteException e) {
+    System.out.println("Erro ao transferir: " + e.getMessage());
+}
+```
 ---
 
 ## 🧠 Resumo Rápido
