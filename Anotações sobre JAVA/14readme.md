@@ -151,6 +151,17 @@ public class LeitorArquivo {
 }
 ```
 
+✅ Quando usar throws na assinatura do método?
+Use throws apenas quando estiver lidando com Checked Exceptions, como:
+
+* IOException
+
+* SQLException
+
+* FileNotFoundException
+
+* etc.
+
 ---
 
 ## 🧪 Boas práticas
