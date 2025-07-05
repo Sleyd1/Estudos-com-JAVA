@@ -133,3 +133,36 @@ Throwable
     │   └── UnknownError
     └── AssertionError
 ```
+
+
+| Exceção                           | Tipo          | Quando ocorre?                        |
+| --------------------------------- | ------------- | ------------------------------------- |
+| `Exception`                       | 🟢 Genérica   | Base para todas as checked exceptions |
+| `IOException`                     | 🟢 Genérica   | Entrada/saída                         |
+| `FileNotFoundException`           | 🔵 Específica | Arquivo inexistente                   |
+| `EOFException`                    | 🔵 Específica | Final de stream inesperado            |
+| `SocketException`                 | 🔵 Específica | Problemas em sockets                  |
+| `SQLException`                    | 🟢 Genérica   | Erros de SQL/banco de dados           |
+| `ClassNotFoundException`          | 🔵 Específica | Classe não encontrada                 |
+| `InstantiationException`          | 🔵 Específica | Instanciar abstrata ou interface      |
+| `InterruptedException`            | 🔵 Específica | Thread interrompida                   |
+| `ParseException`                  | 🔵 Específica | Conversão inválida de texto           |
+| `RuntimeException`                | 🟢 Genérica   | Base para todas unchecked exceptions  |
+| `NullPointerException`            | 🔵 Específica | Acesso a referência nula              |
+| `ArithmeticException`             | 🔵 Específica | Erro aritmético (divisão por zero)    |
+| `IndexOutOfBoundsException`       | 🟢 Genérica   | Índice fora do intervalo              |
+| `ArrayIndexOutOfBoundsException`  | 🔵 Específica | Índice inválido em array              |
+| `StringIndexOutOfBoundsException` | 🔵 Específica | Índice inválido em string             |
+| `IllegalArgumentException`        | 🟢 Genérica   | Argumento inválido                    |
+| `NumberFormatException`           | 🔵 Específica | String → número inválido              |
+| `IllegalStateException`           | 🔵 Específica | Estado incorreto do objeto            |
+| `ClassCastException`              | 🔵 Específica | Conversão inválida                    |
+| `ConcurrentModificationException` | 🔵 Específica | Modificação durante iteração          |
+| `Error`                           | 🟢 Genérica   | Erros graves do sistema               |
+| `OutOfMemoryError`                | 🔵 Específica | Sem memória                           |
+| `StackOverflowError`              | 🔵 Específica | Recursão infinita                     |
+| `VirtualMachineError`             | 🟢 Genérica   | Falha crítica da JVM                  |
+| `InternalError`                   | 🔵 Específica | Erro interno grave                    |
+| `UnknownError`                    | 🔵 Específica | Erro desconhecido                     |
+| `AssertionError`                  | 🔵 Específica | Falha de assertiva                    |
+
