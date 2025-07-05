@@ -128,6 +128,44 @@ class Barco extends Veiculo {
 }
 ````
 
+## Quando uma classe filha é obrigada a reescrever métodos de uma classe abstrata?
+Se a classe abstrata tem métodos abstratos, então sim, qualquer classe filha concreta (não abstrata) é obrigada a implementar todos os métodos abstratos herdados.
+
+### 📖 Por que?
+Porque métodos abstratos não têm implementação na classe abstrata. Eles são apenas uma "assinatura" (declaração do método), indicando que qualquer classe concreta deve dizer como esse método funciona.
+````java
+abstract class Animal {
+    abstract void fazerSom();  // método abstrato
+}
+
+// Classe filha concreta
+class Cachorro extends Animal {
+    @Override
+    void fazerSom() {
+        System.out.println("Au au!");
+    }
+}
+
+````
+✔️ Aqui, a classe Cachorro é obrigada a implementar fazerSom(), porque ele é abstrato na classe Animal.
+
+### 🔷 E se a filha também for abstrata?
+Se a classe filha também for abstrata, ela não precisa implementar os métodos abstratos imediatamente. Ela pode deixar para que uma neta concreta os implemente:
+
+````java
+abstract class Mamifero extends Animal {
+    // não implementa fazerSom()
+}
+
+// Agora uma concreta:
+class Gato extends Mamifero {
+    @Override
+    void fazerSom() {
+        System.out.println("Miau!");
+    }
+}
+
+````
 
 ## ❓Diferença entre Classe Abstrata e Interface
 
