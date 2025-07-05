@@ -45,7 +45,7 @@ System.out.println(user.getNome()); // Saída: João
 ## Para que Servem Atributos?
 Atributos são essenciais na programação orientada a objetos e no desenvolvimento backend pelos seguintes motivos:
 * Representar o Estado de um Objeto:
-   * Atributos armazenam as características de um org.example.trabalhandcomobj1.objetoex.objeto, como id, nome ou saldo de um User.
+   * Atributos armazenam as características de um org.wrappers.trabalhandcomobj1.objetoex.objeto, como id, nome ou saldo de um User.
 
    * No backend, representam dados de entidades persistidas no banco (ex.: colunas de uma tabela).
 

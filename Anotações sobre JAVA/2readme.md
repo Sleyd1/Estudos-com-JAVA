@@ -14,7 +14,7 @@ public class NomeDaClasse {
 
 ## Classes em Java
 O que são Classes?
-Uma classe em Java é um modelo ou blueprint que define as propriedades (atributos) e comportamentos (métodos) de um org.example.trabalhandcomobj1.objetoex.objeto. Classes são a base da programação orientada a objetos (POO) em Java, permitindo encapsular dados e funcionalidades relacionadas. No contexto backend, classes são usadas para modelar entidades (ex.: ``User``, ``Order``), serviços, controladores, ou repositórios.
+Uma classe em Java é um modelo ou blueprint que define as propriedades (atributos) e comportamentos (métodos) de um org.wrappers.trabalhandcomobj1.objetoex.objeto. Classes são a base da programação orientada a objetos (POO) em Java, permitindo encapsular dados e funcionalidades relacionadas. No contexto backend, classes são usadas para modelar entidades (ex.: ``User``, ``Order``), serviços, controladores, ou repositórios.
 
 Exemplo Simples:
 ````java
@@ -41,7 +41,7 @@ Java é uma linguagem orientada a objetos, e classes são fundamentais por causa
    * Exemplo: Um atributo senha em uma classe User pode ser privado, acessado apenas por métodos específicos.
 
 * Reutilização: Classes permitem criar objetos reutilizáveis em diferentes partes do código.
-   * Exemplo: Um org.example.trabalhandcomobj1.objetoex.objeto User pode ser usado em múltiplos serviços (autenticação, perfil).
+   * Exemplo: Um org.wrappers.trabalhandcomobj1.objetoex.objeto User pode ser usado em múltiplos serviços (autenticação, perfil).
 
 * Modularidade: Classes organizam o código, separando responsabilidades (ex.: uma classe para lógica de negócios, outra para acesso ao banco).
 
