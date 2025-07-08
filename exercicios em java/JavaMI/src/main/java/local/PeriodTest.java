@@ -14,5 +14,6 @@ public class PeriodTest {
         Period p3 = Period.ofWeeks(58);
         Period p4 = Period.ofMonths(3);
         Period p5 = Period.ofYears(3);
+        System.out.println(p5);
     }
 }
