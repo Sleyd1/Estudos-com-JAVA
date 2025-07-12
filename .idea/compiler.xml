@@ -9,6 +9,7 @@
         <module name="condicoes" />
         <module name="Lops" />
         <module name="tiposvaloresnumericos" />
+        <module name="Javautilitario2" />
         <module name="vetores" />
         <module name="Mudancadetipo" />
         <module name="objet2" />
