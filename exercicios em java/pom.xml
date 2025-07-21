@@ -19,6 +19,7 @@
         <module>objet2</module>
         <module>JavaMI</module>
         <module>Java utilitario2</module>
+        <module>colecoes</module>
     </modules>
 
     <properties>

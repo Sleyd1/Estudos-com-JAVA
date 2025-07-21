@@ -16,6 +16,7 @@
         <module name="JavaUtilitario" />
         <module name="obje" />
         <module name="Memoria" />
+        <module name="colecoes" />
       </profile>
     </annotationProcessing>
   </component>
