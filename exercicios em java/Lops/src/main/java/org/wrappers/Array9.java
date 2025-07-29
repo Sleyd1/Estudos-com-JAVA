@@ -20,7 +20,7 @@ public class Array9 {
         entrada.close();
 */
 
-
+/*
         int[][] jaggedArray = new int[5][];
 
         for (int i = 0; i < jaggedArray.length; i++) {
@@ -32,10 +32,59 @@ public class Array9 {
                 System.out.print(jaggedArray[i][j]+ ", ");
             }
 
+*/
+
+
+        int[][] jaggedArray = {{1, 2, 3, 4}, {5, 6, 7, 8},
+                {9, 10, 11, 12}, {13, 14, 15, 16}};
+
+        int size = jaggedArray.length;
+        int size2 = jaggedArray[0].length;
+        System.out.print("Main Diagonal: ");
+       // for (int i = 0; i < jaggedArray.length; i++) {
+
+            //System.out.print(jaggedArray[i][i]+"/\\");
+
+            //System.out.print("// "+ jaggedArray[i][size - 1 - i] +" \\");
+           // System.out.print("// "+ jaggedArray[i][0] +" \\");
+
+       // }
+
+        System.out.print("Main Diagonal: ");
+        for(int i = 0; i < jaggedArray.length; i++){
+
+            System.out.print(jaggedArray[i][i] + " ");
         }
 
+        System.out.print("\nAnti-Diagonal: ");
+        for(int i = 0; i < jaggedArray.length; i++){
 
+            System.out.print(jaggedArray[i][size - 1 -i] + " ");
+        }
 
+        System.out.print("\nTop Border: ");
+        for(int i = 0; i < jaggedArray.length; i++){
+
+            System.out.print(jaggedArray[0][i] +" ");
+        }
+
+        System.out.print("\nTop Border: ");
+        for(int i = 0; i < jaggedArray.length; i++){
+
+            System.out.print(jaggedArray[size - 1][i] +" ");
+        }
+
+        System.out.print("\nLeft Border: ");
+        for(int i = 0; i < jaggedArray.length; i++){
+
+            System.out.print(jaggedArray[i][0] +" ");
+        }
+
+        System.out.print("\nRight Border: ");
+        for(int i = 0; i < jaggedArray.length; i++){
+
+            System.out.print(jaggedArray[i][size - 1] +" ");
+        }
 
 
     }
