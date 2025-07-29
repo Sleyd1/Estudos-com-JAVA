@@ -1,10 +1,9 @@
 package org.wrappers;
 
 import java.util.Scanner;
-
 public class Array9 {
     public static void main ( String[] args){
-        Scanner entrada = new Scanner(System.in);
+       /* Scanner entrada = new Scanner(System.in);
         System.out.print("Digite um numero: ");
         int n = entrada.nextInt();
         System.out.println();
@@ -19,6 +18,22 @@ public class Array9 {
 
         }
         entrada.close();
+*/
+
+
+        int[][] jaggedArray = new int[5][];
+
+        for (int i = 0; i < jaggedArray.length; i++) {
+            jaggedArray[i] = new int[i + 1];
+
+            for (int j = 0; j < jaggedArray[i].length; j++) {
+                jaggedArray[i][j] = (i + 1) * (j + 1);
+
+                System.out.print(jaggedArray[i][j]+ ", ");
+            }
+
+        }
+
 
 
 
