@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="condicoes" />
         <module name="Lops" />
+        <module name="generics" />
         <module name="tiposvaloresnumericos" />
         <module name="Javautilitario2" />
         <module name="vetores" />

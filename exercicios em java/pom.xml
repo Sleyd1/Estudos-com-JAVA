@@ -20,6 +20,7 @@
         <module>JavaMI</module>
         <module>Java utilitario2</module>
         <module>colecoes</module>
+        <module>generics</module>
     </modules>
 
     <properties>
