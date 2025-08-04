@@ -21,6 +21,7 @@
         <module>Java utilitario2</module>
         <module>colecoes</module>
         <module>generics</module>
+        <module>JavaLEx</module>
     </modules>
 
     <properties>

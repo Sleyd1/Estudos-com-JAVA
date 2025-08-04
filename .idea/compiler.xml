@@ -8,16 +8,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="condicoes" />
         <module name="Lops" />
+        <module name="JavaLEx" />
+        <module name="objet2" />
+        <module name="JavaUtilitario" />
+        <module name="colecoes" />
         <module name="generics" />
         <module name="tiposvaloresnumericos" />
         <module name="Javautilitario2" />
         <module name="vetores" />
         <module name="Mudancadetipo" />
-        <module name="objet2" />
-        <module name="JavaUtilitario" />
         <module name="obje" />
         <module name="Memoria" />
-        <module name="colecoes" />
       </profile>
     </annotationProcessing>
   </component>
